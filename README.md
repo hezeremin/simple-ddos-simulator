@@ -24,4 +24,5 @@ duration: Saldırı süresi (saniye).
 
 # Notlar
 **Bu araç, gerçek bir saldırı aracı değildir ve yasalara uygun bir şekilde kullanılmalıdır.**
+
 **Yasal sorumluluklar ve etik kurallara dikkat edilmelidir.**
