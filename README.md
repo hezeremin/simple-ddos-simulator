@@ -6,7 +6,7 @@
 
 Proje, Python dilinde yazılmıştır. Projeyi bilgisayarınıza klonlamak için aşağıdaki komutu kullanabilirsiniz:
 
-git clone https://github.com/hezeremin/ddos-sim.git
+git clone https://github.com/hezeremin/simple-ddos-simulator.git
 
 # Kullanım
 Proje ana dizininde, terminal veya komut istemcisine şu komutu yazarak DDoS saldırısını başlatabilirsiniz
