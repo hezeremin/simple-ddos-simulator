@@ -12,7 +12,7 @@ git clone https://github.com/hezeremin/simple-ddos-simulator.git
 Proje ana dizininde, terminal veya komut istemcisine şu komutu yazarak DDoS saldırısını başlatabilirsiniz
 Komut, sahte IP'ler ve rastgele kullanıcı ajanları kullanarak HTTP GET istekleri göndererek belirli bir hedefe saldırı simüle edecektir.
 ```
-python start.py
+python simple-ddos-simulator.py
 ```
 # Parametreler
 fake_ips: Sahte IP sayısı.
