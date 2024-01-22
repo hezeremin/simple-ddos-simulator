@@ -15,7 +15,7 @@ Komut, sahte IP'ler ve rastgele kullanıcı ajanları kullanarak HTTP GET istekl
 python simple-ddos-simulator.py
 ```
 # Parametreler
-fake_ips: Sahte IP sayısı.
+fake_ips: Sahte IP sayısı. \n
 target: Hedef IP adresi.
 change_data: Port ve IP değişikliği isteniyorsa (E/H).
 port: Hedef port numarası (varsayılan: 80).
